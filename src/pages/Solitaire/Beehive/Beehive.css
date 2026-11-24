@@ -1,0 +1,20 @@
+.tableauPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rankButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,45 @@
+.freecell-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.freecell-tableau-center {
+    justify-content: center;
+}
+
+.spider-dealsleft {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+.freecell-button {
+
+}
+
+.freecell-button-sm {
+    background-color: var(--ion-color-primary);
+    padding: 2px 5px;
+    font-size: 15px;
+    margin-top: 2px;
+    border-radius: 5px;
+    color: var(--ion-color-primary-contrast);
+}
+
+@media(width < 800px) {
+    .freecell-seedinfo {
+        font-size: 15px;
+    }
+}
+
+@media(width < 600px) {
+    .freecell-seedinfo {
+        font-size: 10px;
+    }
+    .freecell-button-sm {
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+.menu-game-button {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-gamelist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-sectiontitle {
+    font-size: 150%;
+}

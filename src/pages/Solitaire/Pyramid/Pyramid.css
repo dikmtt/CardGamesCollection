@@ -1,0 +1,57 @@
+.pyramid-container {
+    text-align: center;
+    position: relative;
+    height: 60vh;
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    width: 100px;
+    height: auto;
+    /*transition: transform 0.8s ease-in-out, opacity 0.5s;*/
+}
+
+/* cards come from here when first dealt */
+.spawn-point {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+
+}
+
+.deck {
+    width: 100px;
+    height: auto;
+}
+
+.move-in {
+    transform: translateY(-500px);
+    opacity: 1;
+}
+
+.spawn-move {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+    transition: transform 0.8s ease-in-out, opacity 0.5s;
+}
+
+.pyr-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

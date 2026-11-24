@@ -1,0 +1,39 @@
+<body>
+    <h3>Overview</h3>
+    <p>Beehive is a solitaire game in which the objective is to collect 13 "books" (a.k.a four-of-a-kinds.)
+    </p>
+
+    <h3>Basics</h3>
+    <p>The object of Beehive is to remove all cards from the play area by playing 4 cards of the same rank
+        on each tableau space. There are 2 ways to play this game. This implementation is a more basic, yet
+        strategic version in which any card may occupy an empty spot. Other versions may force the reserve's
+        top card to occupy any empty spaces, if it still has cards on it.
+    </p>
+
+    <h3>Setup</h3>
+    <p>Deal a 13-card reserve and a tableau consisting of 6 cards. The rest of the cards become the stock pile.
+    </p>
+
+    <h3>The Play</h3>
+    <p>You can move a card on top of another card if both cards are the same rank. Cards from the
+        reserve or the waste pile can be played to the tableau following the previous rule. Any card
+        may occupy an empty space. If you are stuck, click on the stock pile to draw cards 3 at a time
+        to the waste. The top card of the waste is playable to the tableau. You are allowed infinite redeals.
+    </p>
+
+    <p>When a pile contains all 4 cards of the same rank, it is removed from the game. You win if
+        all 13 4-card "books" are removed from the game, resulting in an empty tableau, waste, and reserve.
+    </p>
+
+    <h3>Interactions</h3>
+    <ul>
+        <li>Click on a card to select it. Click on a tableau pile to move that card to the tableau space.
+            If it is a valid play, the card or stack will move to the target column. The game keeps track
+            of how many cards occupy each tableau spot. If any tableu space reaches 4 cards, it is automatically
+            emptied.
+        </li>
+        <li>Click on the stock pile to deal cards 3 at a time to the waste. If it is empty, click on
+            the symbol that appears to redeal. You are allowed infinite redeals.
+        </li>
+    </ul>
+</body>

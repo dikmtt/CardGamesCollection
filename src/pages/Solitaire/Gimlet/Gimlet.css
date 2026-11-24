@@ -1,0 +1,38 @@
+.notagimlethand {
+
+}
+
+.gimlet-nothand {
+    display: flex;
+    width: 1100px;
+}
+
+.gimlet-hand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 200px;
+}
+
+.gimlet-handcards {
+    position: absolute;
+    width: 150px !important;
+    height: 200px;
+    flex: none !important;
+}
+
+.gimlet-card {
+    position: absolute;
+    width: 150px !important;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+.gimlet-decklabels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}

@@ -1,0 +1,20 @@
+.sultan-tableauPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sultan-stock {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 19px;
+}
+
+.sultan-waste {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 19px;
+}

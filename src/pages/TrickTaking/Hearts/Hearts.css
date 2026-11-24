@@ -1,0 +1,121 @@
+.ht-cardsize {
+    width: 100px;
+}
+
+.ht-west-cards, .ht-east-cards, .ht-trick-row {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ht-west-cards-rw, .ht-east-cards-rw {
+    position: relative;
+}
+
+.ht-west-card, .ht-east-card {
+    position: absolute;
+}
+
+.ht-north-cards, .ht-your-cards {
+    position: absolute;
+    flex: none;
+}
+
+.ht-north-card, .ht-your-card {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.ht-playername, .ht-trick-winner {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.north-cards {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+}
+
+.north-cards::after {
+    content: "";
+    display: block;
+    height: 140px;
+}
+
+.ht-trickbox {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ht-tricktext {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ht-infocol {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.ht-trick-winner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ht-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ht-smallewtrick {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.ht-scores {
+    white-space: pre-line;
+}
+
+.ht-disabled-alert {
+    pointer-events: none;
+    opacity: 50%;
+}
+
+@media(width < 800px) {
+    .ht-cardsize {
+        width: 70px;
+    }
+
+    .north-cards::after {
+        height: 100px;
+    }
+}
+
+@media(width < 600px) {
+    .ht-cardsize {
+        width: 50px;
+    }
+
+    .north-cards::after {
+        height: 80px;
+    }
+
+    .ht-trick-winner2 {
+        align-items: center;
+    }
+
+    .ht-button {
+        align-items: center;
+    }
+}

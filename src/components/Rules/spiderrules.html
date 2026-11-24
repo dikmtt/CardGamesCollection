@@ -1,0 +1,59 @@
+<body>
+    <h3>Overview</h3>
+    <p>Spider Solitaire is a 2-deck patience game. First invented in the 1940s, it became popular
+        after Microsoft shipped it into Windows operating systems starting from Windows 98.
+    </p>
+
+    <h3>Basics</h3>
+    <p>To win Spider Solitaire, you need to play all cards into the 8 foundation piles.
+        Cards cannot be moved to the foundations by themselves, they must be moved as a stack.
+        A stack can be considered complete and ready to be moved to the foundation if it is a
+        descending run from King to Ace, all in the same suit.
+    </p>
+
+    <h3>Setup</h3>
+    <p>Deal 10 column of face down cards until there are 5 cards in each column. Then add a card to the first
+        4 columns. Turn the top card of each stack face up. The rest of the deck becomes the stock, which has 50 cards.
+    </p>
+
+    <h3>The Play</h3>
+    <p>Cards can be moved to another column if the card is one rank lower than column's top card.
+        Additionally, stacks of cards can be moved if each card differs 1 in rank than the previous one,
+        and all cards in the stack are the same suit. Descending stacks of different suits cannot be moved.
+
+        2 examples:
+        <ol>
+            <li>A 2 of Clubs can be moved to a 3 of Spades, but you cannot move both cards together.</li>
+            <li>A 6 of Hearts can be moved to a 7 of Hearts, and you can move both cards to an available 8.</li>
+        </ol>
+
+        Once a suited run of cards from King to Ace is made, you can move it to a foundation pile.
+        A face-down card gets turned face up if there are no more cards on top of it.
+
+        When you can't or don't want to make any more moves, deal a new set of cards from the stock 
+        by placing one face-up card to each column. This can only be done five times, 
+        after that the stock becomes empty and you can no longer deal more cards.
+    </p>
+
+    <h3>Difficulties</h3>
+    <p>There are 3 difficulties:
+        <ol>
+            <li>Easy Mode: All cards are the same suit</li>
+            <li>Medium Mode: Only 2 suits are used</li>
+            <li>Hard Mode: All 4 suits are used</li>
+        </ol>
+    </p>
+
+    <h3>Interactions</h3>
+    <ul>
+        <li>Click on a card or stack to select it. Click on a different card to move it.
+            If it is a valid play, the card or stack will move to the target column.
+        </li>
+        <li>In this implementation, foundation piles are off-screen and complete suited runs of cards
+            are removed from the board entirely. The number of finished stacks are tracked on top.
+        </li>
+        <li>Click the "DEAL" button to deal a new set of cards to each column. This can only
+            be done 5 times.
+        </li>
+    </ul>
+</body>

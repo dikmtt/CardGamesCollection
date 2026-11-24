@@ -1,0 +1,9 @@
+.eights-stock {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+.eights-discard {
+    margin-left: 10px;
+}

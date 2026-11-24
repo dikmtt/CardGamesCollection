@@ -1,0 +1,57 @@
+<body>
+    <h3>Overview</h3>
+    <p>This is a draw and discard game also known as 31/41 and Scat. The main implementation here
+        is 41, which uses a 4-card hand.
+    </p>
+
+    <h3>Basics</h3>
+    <p>The object of the game is to get your score as close to 41 as possible. A hand is valid only if
+        all cards in that hand are the same suit. If two or more suits are present, the suits with the
+        lesser values are deducted from the highest suit's value.
+    </p>
+
+    <h3>Setup</h3>
+    <p>Deal 4 cards to each player. The remaining deck beomes the stock, and the top card is turned up
+        to form the discard pile.
+    </p>
+
+    <h3>The Play</h3>
+    <p>The player left of the dealer begins the first play. Players may take from either the stock
+        or the discard pile. Then, that player discards a card from their hand. If they took a card 
+        from the discard, they may not discard that same card.
+    </p>
+
+    <p>Players build their hand in order to be the closest to 41 using same-suited cards. If a player
+        is confident they will win (their hand must consist of cards of the same suit) they may go out.
+        Alternatively, players can only go out if their score is above a minimum threshold. The latter
+        is implemented here, and the minimum score is 39.
+    </p>
+
+    <p>Once a player goes out, every player calculates their hand value. Numbered cards are worth
+        their face value. Face cards are all worth 10, and Aces are 11. Any cards of a different suit
+        will have their value deducted from their score. The player with the lowest score loses.
+    </p>
+
+    <p>If a player goes out and another player has a higher hand value than them, they lose the game.
+    </p>
+
+    <p>Here are some hand scoring examples:
+        <ul>
+            <li>A hand of 3-H, 6-H, 7-H, and J-H has 26 points.</li>
+            <li>A hand of 8-C, 10-C, Q-C, and A-C has 39 points.</li>
+            <li>A hand of 8-C, 10-C, A-C, and 5-S has 24 points. All clubs are worth 29, minus the 5-valued spade.</li>
+            <li>A hand of 10-H, K-H, J-D, and 3-S has 7 points. 20 from Hearts minus 10 from Diamonds and 3 from Spades.
+                The base suit of this hand is Hearts because it has the highest card value.
+            </li>
+        </ul>
+    </p>
+
+    <h3>Interactions</h3>
+    <ul>
+        <li>If it is your turn, click on either the waste pile or the stock pile to draw a card from there.
+            Then click on a card from your hand to discard it. If any player's score reaches 39 or higher,
+            the game automatically ends. If the stock pile is empty and no one has reached 39, the game also
+            ends automatically.
+        </li>
+    </ul>
+</body>

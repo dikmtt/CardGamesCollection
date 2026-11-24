@@ -1,0 +1,45 @@
+<body>
+    <h3>Overview</h3>
+    <p>Simple Simon is a 1-deck patience game similar to Spider.
+    </p>
+
+    <h3>Basics</h3>
+    <p>To win Simple Simon, you need to play all cards into the 4 foundation piles.
+        Cards cannot be moved to the foundations by themselves, they must be moved as a stack.
+        A stack can be considered complete and ready to be moved to the foundation if it is a
+        descending run from King to Ace, all in the same suit.
+    </p>
+
+    <h3>Setup</h3>
+    <p>Deal 10 columns of face up cards. Start by dealing one card to each column, and track the last column
+        where a card was dealt. When dealing the next row, skip dealing cards to that column and all columns
+        to the right of it. When finished, the tableau will have these number of cards in each column:
+    </p>
+    <h5>8 8 8 7 6 5 4 3 2 1</h5>
+
+    <h3>The Play</h3>
+    <p>Cards can be moved to another column if the card is one rank lower than column's top card.
+        Additionally, stacks of cards can be moved if each card differs 1 in rank than the previous one,
+        and all cards in the stack are the same suit. Descending stacks of different suits cannot be moved.
+
+        2 examples:
+        <ol>
+            <li>A 2 of Clubs can be moved to a 3 of Spades, but you cannot move both cards together.</li>
+            <li>A 6 of Hearts can be moved to a 7 of Hearts, and you can move both cards to an available 8.</li>
+        </ol>
+
+        Once a suited run of cards from King to Ace is made, you can move it to a foundation pile.
+    </p>
+
+    <h3>Interactions</h3>
+    <ul>
+        <li>Click on a card or stack to select it. Click on a different card to move it.
+            If it is a valid play, the card or stack will move to the target column.
+        </li>
+        <li>In this implementation, foundation piles are off-screen and complete suited runs of cards
+            are removed from the board entirely. The number of finished stacks are tracked on top.
+        </li>
+        <li>Click the "UNDO" button to undo your last move.
+        </li>
+    </ul>
+</body>

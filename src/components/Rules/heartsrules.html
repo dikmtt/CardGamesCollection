@@ -1,0 +1,72 @@
+<body>
+    <h3>Overview</h3>
+    <p>Hearts is a trick-taking card game. 
+        The objective of the game is to be the player with the least amount of points when the game ends,
+    usually when a player reaches a certain target score.
+    In most digital implementations, including this one, the Black Lady variant is used, where
+    the Queen of Spades is worth 13 points. It's also the version that Microsoft uses in its
+    Hearts programs from Windows 95 to 7.</p>
+
+    <h3>Basics</h3>
+    <p>In trick-taking games, each player plays a card, and after every player plays, the cards form a "trick".
+        The player who played the highest card according to game rules wins all cards in the trick.
+        In Hearts, the number of tricks taken doesn't matter, what matters is the cards captured in each trick.
+        Each heart card is worth 1 penalty point, and the Queen of Spades is worth 13. You want to end up
+        with the lowest score at the end of the game, so it's typically best to avoid tricks containing them.
+    </p>
+
+    <h3>Setup</h3>
+    <p>Hearts is most commonly played with 4 players, as seen in both this implementation as well as
+        most implementations online. However, by removing certain cards, the game can be played with 3 or
+        5 players. In each hand, players are dealt evenly - 13 cards for each player in a 4-player game.
+    </p>
+
+    <h3>Passing Cards</h3>
+    <p>In both this version and most implementations of Hearts, players pass 3 cards to another player before
+        playing cards, and the passing rotation changes each round, looping between Left, Right, Across, and Keep.
+        Left and Right mean players pass 3 cards to the player on the left and right of them respectively, and Across 
+        means players pass cards to the players opposite from them. Every fourth round, there is no passing, and the
+        passing rotation returns back to Left after the round finishes.
+    </p>
+
+    <h3>The Play</h3>
+    <p>Each round starts with the 2 of Clubs. Players must play a card of the same suit as the trick's
+        first card if possible (following suit). If not, they may play any card. Players cannot start a trick (leading) with a heart
+        unless hearts have been broken. There are two ways to do so:
+        <ol>
+            <li>A player is unable to follow suit and plays a heart card</li>
+            <li>It is a player's turn to lead and their only cards in their hand are hearts</li>
+        </ol>
+        A trick is won by the player who played the highest card in the lead card's suit. There is
+        never a trump suit in Hearts. The player who won the trick leads the next trick.
+    </p>
+
+    <h3>Scoring</h3>
+    <p>After all tricks in a round have been played and all players' hands are empty, each player counts
+        the number of penalty points captured in tricks, scoring 1 for each heart and 13 for the Q-S.
+        The game continues with a new rounds until a player reaches the minimum target score, such as 50
+        or 100, in which the player with the least amount of points wins.
+    </p>
+
+    <h3>Shooting the moon</h3>
+    <p>Modern implementations of Hearts include a special rule where if a player captures all penalty cards
+        in one round, they don't score 26 points but instead give it to all other players, or deduct 26
+        from their score. This rule, known as "Shooting the Moon", is also implemented here, and is the only
+        time in which taking many points (if not all of them) are beneficial.
+    </p>
+
+    <h3>Miscellaneous</h3>
+    <ul>
+        <li>The Queen of Spades in this variant does not break hearts, but it can be led anytime.</li>
+        <li>Players cannot dump penalty cards (Hearts or the Q-S) in the first trick of each round. If they can't follow suit, they must play a spade or diamond.</li>
+    </ul>
+
+    <h3>Interactions</h3>
+    <ul>
+        <li>Click on a card to play it to a trick. The game will tell you if the play is valid or not.</li>
+        <li>During the card passing phase, click on a card to highlight it, indicating you want to pass that card.
+            Once three cards have been highlighted, click the PASS button to start passing. You are given some
+            time to analyze which cards have been passed back to you, before each round starts.
+        </li>
+    </ul>
+</body>

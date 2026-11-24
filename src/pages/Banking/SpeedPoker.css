@@ -1,0 +1,25 @@
+.sp-titlearea {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sp-title {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.sp-cardsarea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sp-card {
+    margin: 5px;
+}
+
+.sp-handname {
+    font-size: 200%;
+}

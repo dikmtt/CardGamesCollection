@@ -1,0 +1,55 @@
+<body>
+    <h3>Overview</h3>
+    <p>FreeCell is invented by Paul Alfille in the 1970s, first introduced to PLATO computing
+        systems in 1978. It became one of the most popular solitaire games included in Microsoft
+        systems, and the second one to do so after Klondike.
+    </p>
+
+    <h3>Basics</h3>
+    <p>The object of the game is to play all cards to the foundations. Each foundation pile starts
+        with Ace and builds up in suit to King. There are 8 tableau piles that build down in alternate
+        colors from King to Ace. There are four free cells that can only hold one card each.
+    </p>
+
+    <h3>Setup</h3>
+    <p>The tableau consists of 8 columns. The first 4 columns have 7 cards, and the last 4 have 6.
+    </p>
+
+    <h3>The Play</h3>
+    <p>To move a card between tableau spaces, the card must be one value lower than the target column's
+        top card and of a different color. You can move stacks, but the size is limited by the amount
+        of free cells available. (General formula: number of available free cells + 1)
+
+        Some examples:
+        <ol>
+            <li>A 2 of Clubs can be moved to a 3 of Diamonds.</li>
+            <li>A 6 of Hearts cannot be moved to a 7 of Hearts. The colors must alternate.</li>
+            <li>If 2 of 4 free cells are occupied, you can move a valid run of at most 3 cards.</li>
+        </ol>
+
+        There are 4 free cells. You can move any card to a free cell, but they can only occupy 1
+        card each. Cards may also be moved from the free cells to either the tableau or foundations.
+        Empty spaces in the tableau can be filled with any card or valid run.
+    </p>
+
+        
+    <p>If an available Ace is exposed, you can move it to a foundation pile. Then you can start building
+        up in suit by moving a valid card to the foundations. Once all cards are moved to the foundations,
+        you win the game.
+    </p>
+
+    <h3>Interactions</h3>
+    <ul>
+        <li>Click on a card or stack to select it. Click on a different card to move it.
+            If it is a valid play, the card or stack will move to the target column.
+        </li>
+        <li>The free cells have yellow borders at the start. The foundations have white borders.
+        </li>
+        <li>The game allows 1-click movement to the foundations after a moment in which all tableau
+            columns are exactly descending in rank.
+        </li>
+        <li>You can choose between 3 deal types: A completely random shuffle, or one of Microsoft's
+            original 32,000 deals either by random or from typing a seed number.
+        </li>
+    </ul>
+</body>

@@ -1,0 +1,44 @@
+.vp-rowitem {
+    display: flex;
+    justify-content: center;
+}
+
+.vp-cardflipout {
+    width: 170px;
+    height: 270px;
+    perspective: 600px;
+}
+
+.vp-cardflipin {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+}
+
+.vp-cardflipface,
+.vp-cardflipback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.vp-cardflipface img,
+.vp-cardflipback img {
+    object-fit: cover;
+}
+
+.vp-cardflipface {
+    transform: rotateY(180deg);
+}
+
+.vp-cardflipback {
+
+}
+
+.vp-cardflipin.is-flipped {
+    transform: rotateY(180deg);
+}
